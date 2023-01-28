@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/Login';
 
 function App() {
+  const x = 10
+  const y = 20
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Login />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,6 +20,14 @@ function App() {
         >
           Learn React
         </a>
+        <ul>
+          <li>Apple1</li>
+          <li>Apple2</li>
+          <li>Apple3</li>
+        </ul>
+
+        <h3 data-testid="custom-element">Hello custom H4</h3>
+        <span title='sum'>{x + y}</span>
       </header>
     </div>
   );
